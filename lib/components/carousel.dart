@@ -6,12 +6,14 @@ class CardSlide extends StatefulWidget {
   final heightOfCard, widthOfCard;
 
   const CardSlide({Key key, this.heightOfCard, this.widthOfCard});
+
   @override
   _CardSlideState createState() => _CardSlideState();
 }
 
 class _CardSlideState extends State<CardSlide> {
   double heightOfCard, widthOfCard;
+
 //  _CardSlideState({
 ////    this.heightOfCard,
 ////    this.widthOfCard,
@@ -32,7 +34,7 @@ class _CardSlideState extends State<CardSlide> {
               scrollDirection: Axis.horizontal,
               viewportFraction: 0.9,
               enlargeCenterPage: true,
-              enableInfiniteScroll: false,
+              enableInfiniteScroll: true,
               autoPlayInterval: Duration(seconds: 3),
               autoPlayAnimationDuration: Duration(milliseconds: 800),
               autoPlayCurve: Curves.fastOutSlowIn,
@@ -62,6 +64,7 @@ class _CardSlideState extends State<CardSlide> {
 class Item1 extends StatelessWidget {
 //  const Item1({Key key}) : super(key: key);
   Item1({this.heightleft});
+
   final heightleft;
 
   @override

@@ -21,35 +21,18 @@ class HomePage extends StatelessWidget {
               widthOfCard: _width / 2,
             )),
             Container(
-                child: CardSlide(
-              heightOfCard: _width / 2,
-              widthOfCard: _width / 2,
-            )),
-            Container(
-                child: CardSlide(
-              heightOfCard: _width / 2,
-              widthOfCard: _width / 2,
-            )),
-            Container(
-                child: CardSlide(
-              heightOfCard: _width / 2,
-              widthOfCard: _width / 2,
-            )),
-            Container(
-                child: CardSlide(
-              heightOfCard: _width / 2,
-              widthOfCard: _width / 2,
-            )),
-            Container(
-                child: CardSlide(
-              heightOfCard: _width / 2,
-              widthOfCard: _width / 2,
-            )),
-            Container(
-                child: CardSlide(
-              heightOfCard: _width / 2,
-              widthOfCard: _width / 2,
-            )),
+              width: _width - 100,
+              height: _width,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(30),
+                  child: Image(
+                      image: NetworkImage(
+                          'https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80')),
+                ),
+              ),
+            ),
             Container(
                 child: CardSlide(
               heightOfCard: _width / 2,
